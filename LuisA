@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+<ul>
+
+<li type="circle">Esto es un tipo de punto.</li>
+
+<li type="square">Este es otro.</li>
+
+<li type="disc">Y este es otro diferente.</li>
+
+</ul>
+</html>
