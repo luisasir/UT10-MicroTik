@@ -46,10 +46,26 @@ En cuanto a la configuración, entraremos mediante la MAC respecto a HeX ya que 
 Lo conectaremos a través del puerto de internet.
 En la configuración del HaP, primero, configuraremos su IP:
 ![Screenshot](https://i.ibb.co/HKqRTcF/HAP-IP.png)
+
 Donde la dirección 192.168.1.0 es la que le daremos para conectar con el HeX y la 2.0, la utilizaremos para dar conexión WIFI luego.
 
 Y respecto a las rutas:
 ![Screenshot](https://i.ibb.co/J7j3nX1/HAP-ROUTE.png)
+
+En realidad, sólo haría falta la primera ruta respecto a la segunda.
+Luego pondremos a la 192.168.1.0, a la 192.168.2.0 y a la 192.168.104.0.
+
+Ahora procederemos a crear el servidor DHCP:
+
+![Screenshot](https://i.ibb.co/b5wnSgF/DHCP-SERVER.png)
+
+Lo configuraremos en el bridge como muestra la imagen.
+
+IP POOL:
+
+![Screenshot](https://i.ibb.co/RymLrgB/IP-POOL.png)
+
+
 
 ### And coding style tests
 
