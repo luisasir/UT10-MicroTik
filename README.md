@@ -3,6 +3,8 @@
 ## Índice
 
 <ul>
+  
+<li type="disc">Dispositivos.</li>
 
 <li type="disc">WinBox.</li>
 
@@ -14,19 +16,16 @@
 
 </ul>
 
-### Prerequisites
+### Dispositivos
 
-What things you need to install the software and how to install them
+Vamos a utilizar dos artefactos
 
-```
-Give examples
-```
+-HeX: Es un enrutador de cinco puertos para ubicaciones donde no se requiere conectividad inalámbrica.
 
-### Installing
+-HaP: Es el dispositivo inalámbrico para el hogar u oficina el cual usaremos para crear y dar conexión, por ejemplo, al móvil
+### Winbox
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Winbox es el programa que vamos a utilizar para conectarlo al equipo y configurar ambos dispositivos
 
 ```
 Give the example
