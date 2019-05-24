@@ -1,8 +1,18 @@
 # Trabajo Microtik
 
-## Lo que sea
+## Índice
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+<ul>
+
+<li type="disc">WinBox.</li>
+
+<li type="disc">Configuración HeX</li>
+
+<li type="disc">Configuración HaP</li>
+
+<li type="disc">RommON</li>
+
+</ul>
 
 ### Prerequisites
 
