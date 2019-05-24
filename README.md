@@ -32,8 +32,13 @@ Winbox es una pequeña aplicación que nos permite la administración de Mikroti
 En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el HaP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
 Entraremos al HeX mediante la MAC(si no tiene IP puesta) con el Winbox.
-Seguidamente iremos a la pestaña de "IP", después, "Adresses". Aquí configuraremos la dirección IP que tendrá el Router. 
+Seguidamente iremos a la pestaña de "IP", después, "Adresses". Aquí configuraremos la dirección IP junto a las rutas que tendrá el Router. 
 ![Screenshot](https://i.ibb.co/0YC4G5b/HEX-IP-Y-ROUTE.png)
+Donde la dirección 192.168.104.0 será la dirección del propio instituto.
+La dirección 192.168.3.0 será la dirección hacia el equipo en el que estará conectado.
+La dirección 192.168.1.0 será la del HaP.
+
+Luego realizaremos los saltos necesarios mostrados en la imagen.
 
 ### Break down into end to end tests
 
