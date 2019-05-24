@@ -40,13 +40,13 @@ La dirección 192.168.1.0 será la del HaP.
 
 Luego realizaremos los saltos necesarios mostrados en la imagen.
 
-### Break down into end to end tests
+### Configuración HaP
+En el primer puerto del HaP lo enlazaremos con el HeX.
+En cuanto a la configuración, entraremos mediante la MAC respecto a HeX ya que se reconocen entre sí por estar conectadas.
+Lo conectaremos a través del puerto de internet.
+En la configuración del HaP, primero, configuraremos su IP:
+![Screenshot](https://i.ibb.co/HKqRTcF/HAP-IP.png)
 
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ### And coding style tests
 
