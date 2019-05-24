@@ -46,7 +46,10 @@ En cuanto a la configuración, entraremos mediante la MAC respecto a HeX ya que 
 Lo conectaremos a través del puerto de internet.
 En la configuración del HaP, primero, configuraremos su IP:
 ![Screenshot](https://i.ibb.co/HKqRTcF/HAP-IP.png)
+Donde la dirección 192.168.1.0 es la que le daremos para conectar con el HeX y la 2.0, la utilizaremos para dar conexión WIFI luego.
 
+Y respecto a las rutas:
+![Screenshot](https://i.ibb.co/J7j3nX1/HAP-ROUTE.png)
 
 ### And coding style tests
 
