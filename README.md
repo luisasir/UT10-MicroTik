@@ -22,27 +22,18 @@ Vamos a utilizar dos **artefactos:**
 
 **-HeX:** Es un enrutador de cinco puertos para ubicaciones donde no se requiere conectividad inalámbrica.
 
-**-HaP:** Es el dispositivo inalámbrico para el hogar u oficina el cual usaremos para crear y dar conexión, por ejemplo, al móvil
+**-HaP:** Es el dispositivo inalámbrico para el hogar u oficina con el cual usaremos para crear y dar conexión, por ejemplo, al móvil
 
 ### Winbox
 
 Winbox es una pequeña aplicación que nos permite la administración de Mikrotik RouterOS usando una interfaz gráfica
 
-```
-Give the example
-```
+## Configuración HeX
+En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el HaP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
-And repeat
+Entraremos al HeX mediante la MAC(si no tiene IP puesta) con el Winbox.
+Seguidamente iremos a la pestaña de "IP", después, "Adresses". Aquí configuraremos la dirección IP que tendrá el Router
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
