@@ -18,11 +18,11 @@
 
 ### Dispositivos
 
-Vamos a utilizar dos artefactos
+Vamos a utilizar dos **artefactos**
 
--HeX: Es un enrutador de cinco puertos para ubicaciones donde no se requiere conectividad inalámbrica.
+**-HeX:** Es un enrutador de cinco puertos para ubicaciones donde no se requiere conectividad inalámbrica.
 
--HaP: Es el dispositivo inalámbrico para el hogar u oficina el cual usaremos para crear y dar conexión, por ejemplo, al móvil
+**-HaP:** Es el dispositivo inalámbrico para el hogar u oficina el cual usaremos para crear y dar conexión, por ejemplo, al móvil
 ### Winbox
 
 Winbox es el programa que vamos a utilizar para conectarlo al equipo y configurar ambos dispositivos
