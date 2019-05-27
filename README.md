@@ -4,7 +4,7 @@
 
 <ul>
   
-<li type="disc">Dispositivos.</li>
+<li type="disc">**Dispositivos.**</li>
 
 <li type="disc">WinBox.</li>
 
@@ -44,12 +44,13 @@ Luego realizaremos los saltos necesarios mostrados en la imagen.
 En el primer puerto del HaP lo enlazaremos con el HeX.
 En cuanto a la configuración, entraremos mediante la MAC respecto a HeX ya que se reconocen entre sí por estar conectadas.
 Lo conectaremos a través del puerto de internet.
+Para poder acceder a este mediante el HeX(ya que no tenemos la IP), necesitaremos entrar mediante la MAC cuya opción es **ROMmon**
 En la configuración del HaP, primero, configuraremos su IP:
 ![Screenshot](https://i.ibb.co/HKqRTcF/HAP-IP.png)
 
 Donde la dirección 192.168.1.0 es la que le daremos para conectar con el HeX y la 2.0, la utilizaremos para dar conexión WIFI luego.
 
-Y respecto a las rutas:
+Y respecto a las **rutas:**
 ![Screenshot](https://i.ibb.co/J7j3nX1/HAP-ROUTE.png)
 
 En realidad, sólo haría falta la primera ruta respecto a la segunda.
@@ -61,7 +62,7 @@ Ahora procederemos a crear el servidor DHCP:
 
 Lo configuraremos en el bridge como muestra la imagen.
 
-IP POOL:
+**IP POOL:**
 
 ![Screenshot](https://i.ibb.co/RymLrgB/IP-POOL.png)
 
@@ -90,39 +91,3 @@ Primero activaremos la opción Wifi, luego buscaremos el SSID con su correspondi
 En la siguiente foto se podrá observar un registro de usuarios que se han conectado:
 
 ![Screenshot](https://i.ibb.co/kcM7fz8/DCHP-MOVIL.png)
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
