@@ -8,9 +8,9 @@
 
 <li type="disc">WinBox.</li>
 
-<li type="disc">Configuración HeX</li>
+<li type="disc">Configuración hEX</li>
 
-<li type="disc">Configuración HaP</li>
+<li type="disc">Configuración hAP</li>
 
 <li type="disc">Verificación</li>
 
@@ -20,35 +20,35 @@
 
 Vamos a utilizar dos **artefactos:**
 
-**-HeX:** Es un enrutador de cinco puertos para ubicaciones donde no se requiere conectividad inalámbrica.
+**-hEX:** Es un enrutador de cinco puertos para ubicaciones donde no se requiere conectividad inalámbrica.
 
-**-HaP:** Es el dispositivo inalámbrico para el hogar u oficina con el cual usaremos para crear y dar conexión, por ejemplo, al móvil
+**-hAP:** Es el dispositivo inalámbrico para el hogar u oficina con el cual usaremos para crear y dar conexión, por ejemplo, al móvil
 
 ### Winbox
 
 **Winbox** es una pequeña aplicación que nos permite la administración de Mikrotik RouterOS usando una interfaz gráfica.
 
-### Configuración HeX
+### Configuración hEX
 En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el HaP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
-Entraremos al **HeX** mediante la MAC(si no tiene IP puesta) con el Winbox.
+Entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
 Seguidamente iremos a la pestaña de **"IP"**, después, "Adresses". Aquí configuraremos la dirección IP junto a las rutas que tendrá el Router. 
 ![Screenshot](https://i.ibb.co/0YC4G5b/HEX-IP-Y-ROUTE.png)
 Donde la dirección **192.168.104.0** será la dirección del propio instituto.
 La dirección **192.168.3.0** será la dirección hacia el equipo en el que estará conectado.
-La dirección **192.168.1.0** será la del **HaP**.
+La dirección **192.168.1.0** será la del **hAP**.
 
 Luego realizaremos los saltos necesarios mostrados en la imagen.
 
-### Configuración HaP
-En el primer puerto del **HaP** lo enlazaremos con el **HeX**.
-En cuanto a la configuración, entraremos mediante la MAC respecto a **HeX** ya que se reconocen entre sí por estar conectadas.
+### Configuración hAP
+En el primer puerto del **hAP** lo enlazaremos con el **hEX**.
+En cuanto a la configuración, entraremos mediante la MAC respecto a **hEX** ya que se reconocen entre sí por estar conectadas.
 Lo conectaremos a través del puerto de internet.
-Para poder acceder a este mediante el **HeX**(ya que no tenemos la IP), necesitaremos entrar mediante la MAC cuya opción es **ROMmon**
-En la configuración del **HaP**, primero, configuraremos su IP:
+Para poder acceder a este mediante el **hEX**(ya que no tenemos la IP), necesitaremos entrar mediante la MAC cuya opción es **ROMmon**
+En la configuración del **hAP**, primero, configuraremos su IP:
 ![Screenshot](https://i.ibb.co/HKqRTcF/HAP-IP.png)
 
-Donde la dirección **192.168.1.0** es la que le daremos para conectar con el **HeX** y la **2.0**, la utilizaremos para dar conexión WIFI luego.
+Donde la dirección **192.168.1.0** es la que le daremos para conectar con el **hEX** y la **2.0**, la utilizaremos para dar conexión WIFI luego.
 
 Y respecto a las **rutas:**
 ![Screenshot](https://i.ibb.co/J7j3nX1/HAP-ROUTE.png)
@@ -79,7 +79,7 @@ Una vez dentro, pondremos el nombre, el tipo de autenticación y la contraseña.
 
 ### Verificación
 
-Para verificar que tenemos internet en el equipo conectado directamente al **HeX**, realizaremos un tracert para ver las rutas por las que va hasta poder llegar a conectarse:
+Para verificar que tenemos internet en el equipo conectado directamente al **hEX**, realizaremos un tracert para ver las rutas por las que va hasta poder llegar a conectarse:
 
 ![Screenshot](https://i.ibb.co/zGhc23V/tracert-8-8-8-8-pc.png)
 
