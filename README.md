@@ -4,7 +4,7 @@
 
 <ul>
   
-<li type="disc">**Dispositivos.**</li>
+<li type="disc">Dispositivos.</li>
 
 <li type="disc">WinBox.</li>
 
@@ -26,35 +26,35 @@ Vamos a utilizar dos **artefactos:**
 
 ### Winbox
 
-Winbox es una pequeña aplicación que nos permite la administración de Mikrotik RouterOS usando una interfaz gráfica
+**Winbox** es una pequeña aplicación que nos permite la administración de Mikrotik RouterOS usando una interfaz gráfica
 
 ### Configuración HeX
 En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el HaP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
-Entraremos al HeX mediante la MAC(si no tiene IP puesta) con el Winbox.
-Seguidamente iremos a la pestaña de "IP", después, "Adresses". Aquí configuraremos la dirección IP junto a las rutas que tendrá el Router. 
+Entraremos al **HeX** mediante la MAC(si no tiene IP puesta) con el Winbox.
+Seguidamente iremos a la pestaña de **"IP"**, después, "Adresses". Aquí configuraremos la dirección IP junto a las rutas que tendrá el Router. 
 ![Screenshot](https://i.ibb.co/0YC4G5b/HEX-IP-Y-ROUTE.png)
-Donde la dirección 192.168.104.0 será la dirección del propio instituto.
-La dirección 192.168.3.0 será la dirección hacia el equipo en el que estará conectado.
-La dirección 192.168.1.0 será la del HaP.
+Donde la dirección **192.168.104.0** será la dirección del propio instituto.
+La dirección **192.168.3.0** será la dirección hacia el equipo en el que estará conectado.
+La dirección **192.168.1.0** será la del **HaP**.
 
 Luego realizaremos los saltos necesarios mostrados en la imagen.
 
 ### Configuración HaP
-En el primer puerto del HaP lo enlazaremos con el HeX.
-En cuanto a la configuración, entraremos mediante la MAC respecto a HeX ya que se reconocen entre sí por estar conectadas.
+En el primer puerto del **HaP** lo enlazaremos con el **HeX**.
+En cuanto a la configuración, entraremos mediante la MAC respecto a **HeX** ya que se reconocen entre sí por estar conectadas.
 Lo conectaremos a través del puerto de internet.
-Para poder acceder a este mediante el HeX(ya que no tenemos la IP), necesitaremos entrar mediante la MAC cuya opción es **ROMmon**
-En la configuración del HaP, primero, configuraremos su IP:
+Para poder acceder a este mediante el **HeX**(ya que no tenemos la IP), necesitaremos entrar mediante la MAC cuya opción es **ROMmon**
+En la configuración del **HaP**, primero, configuraremos su IP:
 ![Screenshot](https://i.ibb.co/HKqRTcF/HAP-IP.png)
 
-Donde la dirección 192.168.1.0 es la que le daremos para conectar con el HeX y la 2.0, la utilizaremos para dar conexión WIFI luego.
+Donde la dirección **192.168.1.0** es la que le daremos para conectar con el **HeX** y la **2.0**, la utilizaremos para dar conexión WIFI luego.
 
 Y respecto a las **rutas:**
 ![Screenshot](https://i.ibb.co/J7j3nX1/HAP-ROUTE.png)
 
 En realidad, sólo haría falta la primera ruta respecto a la segunda.
-Luego pondremos a la 192.168.1.0, a la 192.168.2.0 y a la 192.168.104.0.
+Luego pondremos a la **192.168.1.0**, a la **192.168.2.0** y a la **192.168.104.0**.
 
 Ahora procederemos a crear el servidor DHCP:
 
@@ -71,15 +71,15 @@ Ahora procederemos a configurar la seguridad del Wireless:
 ![Screenshot](https://i.ibb.co/Zgp5m4g/wlan.png)
 
 En la anterior imagen tocaremos más que nada donde pone "Mode" a "ap bridge", luego en el SSID pondremos el nombre que tendrá la conexión Wifi.
-Al finalizar, nos dirigiremos a la pestaña "Advanced Mode":
+Al finalizar, nos dirigiremos a la pestaña **"Advanced Mode"**:
 
 ![Screenshot](https://i.ibb.co/hs82f82/VISHIPROFILE.png)
 
-Una vez dentro, pondremos el nombre, el tipo de autenticación y la contraseña. Al acabar tendremos que clickar en "Apply".
+Una vez dentro, pondremos el nombre, el tipo de autenticación y la contraseña. Al acabar tendremos que clickar en **"Apply"**.
 
 ### Verificación
 
-Para verificar que tenemos internet en el equipo conectado directamente al HeX, realizaremos un tracert para ver las rutas por las que va hasta poder llegar a conectarse:
+Para verificar que tenemos internet en el equipo conectado directamente al **HeX**, realizaremos un tracert para ver las rutas por las que va hasta poder llegar a conectarse:
 
 ![Screenshot](https://i.ibb.co/zGhc23V/tracert-8-8-8-8-pc.png)
 
