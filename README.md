@@ -65,15 +65,31 @@ IP POOL:
 
 ![Screenshot](https://i.ibb.co/RymLrgB/IP-POOL.png)
 
+Ahora procederemos a configurar la seguridad del Wireless:
 
+![Screenshot](https://i.ibb.co/Zgp5m4g/wlan.png)
 
-### And coding style tests
+En la anterior imagen tocaremos más que nada donde pone "Mode" a "ap bridge", luego en el SSID pondremos el nombre que tendrá la conexión Wifi.
+Al finalizar, nos dirigiremos a la pestaña "Advanced Mode":
 
-Explain what these tests test and why
+![Screenshot](https://i.ibb.co/hs82f82/VISHIPROFILE.png)
 
-```
-Give an example
-```
+Una vez dentro, pondremos el nombre, el tipo de autenticación y la contraseña. Al acabar tendremos que clickar en "Apply".
+
+### Verificación
+
+Para verificar que tenemos internet en el equipo conectado directamente al HeX, realizaremos un tracert para ver las rutas por las que va hasta poder llegar a conectarse:
+
+![Screenshot](https://i.ibb.co/zGhc23V/tracert-8-8-8-8-pc.png)
+
+En la anterior foto podemos ver los diferentes saltos que se realizan.
+
+A continuación, haremos la prueba del Wifi mediante móviles. 
+Primero activaremos la opción Wifi, luego buscaremos el SSID con su correspondiente clave que le hemos puesto anteriormente.
+
+En la siguiente foto se podrá observar un registro de usuarios que se ha conectado:
+
+![Screenshot](https://i.ibb.co/kcM7fz8/DCHP-MOVIL.png)
 
 ## Deployment
 
