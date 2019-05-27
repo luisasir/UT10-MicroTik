@@ -12,7 +12,7 @@
 
 <li type="disc">Configuración HaP</li>
 
-<li type="disc">RommON</li>
+<li type="disc">Verificación</li>
 
 </ul>
 
@@ -87,7 +87,7 @@ En la anterior foto podemos ver los diferentes saltos que se realizan.
 A continuación, haremos la prueba del Wifi mediante móviles. 
 Primero activaremos la opción Wifi, luego buscaremos el SSID con su correspondiente clave que le hemos puesto anteriormente.
 
-En la siguiente foto se podrá observar un registro de usuarios que se ha conectado:
+En la siguiente foto se podrá observar un registro de usuarios que se han conectado:
 
 ![Screenshot](https://i.ibb.co/kcM7fz8/DCHP-MOVIL.png)
 
