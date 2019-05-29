@@ -102,4 +102,4 @@ Estas son las características de la **red**:
 Y esta es el recorrido que hace:
 ![Screenshot](https://i.ibb.co/PgV5c7D/IMG-20190522-WA0010.jpg)
 
-Por último, mostrar el [vídeo](https://www.youtube.com/watch?v=1e_Q8hf3cGM) realizado a modo de tutorial.
+Por último, mostrar el vídeo, realizado a modo de tutorial con el [link](https://www.youtube.com/watch?v=1e_Q8hf3cGM)
