@@ -91,3 +91,13 @@ Primero activaremos la opción Wifi, luego buscaremos el SSID con su correspondi
 En la siguiente foto se podrá observar un registro de usuarios que se han conectado:
 
 ![Screenshot](https://i.ibb.co/kcM7fz8/DCHP-MOVIL.png)
+
+Para finalizar, realizamos algunas capturas de un dispositivo móvil conectado a la **red** creada haciendo un **tracert**:
+
+Estas son las características de la **red**:
+
+![Screenshot](https://i.ibb.co/tsY34x1/IMG-20190522-WA0011.jpg)
+![Screenshot](https://i.ibb.co/NjfQ8ks/IMG-20190522-WA0012.jpg)
+
+Y esta es el recorrido que hace:
+![Screenshot](https://i.ibb.co/PgV5c7D/IMG-20190522-WA0010.jpg)
