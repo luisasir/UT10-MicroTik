@@ -19,7 +19,7 @@
 </ul>
 ### Objetivos
 
-En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con IP´s diferentes mediante la conexión del hEX con el hAP, este último actúa como switch aunque de WIFI.
+En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con IP´s diferentes mediante la conexión del hEX con el hAP, este último actúa como switch aunque de WIFI aunque en el programa **Packet tracer** no nos permita diferenciarlo.
 
 ### Dispositivos
 
@@ -55,4 +55,6 @@ En la pestaña de las direcciones, cambiaremos la IP respecto al hEX ya que aqu�
 
 En la parte del servidor DHCP, la diferencia que ha de tener el hAP respecto al hEX, es que no se monta el servidor DHCP.
 
-Nombrar también que el puerto que enlaza el hEX y el hAP, tendrán que estar los dos en modo **"trunk"**
+**Nombrar también que el puerto que enlaza el hEX y el hAP, tendrán que estar los dos en modo "trunk"**
+
+### Verificación
