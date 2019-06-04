@@ -100,3 +100,13 @@ Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
 ### Verificación
 Finalmente, nos conectaremos desde el ordenador que tiene IP **192.168.20.100** y realizaremos el comando **tracert** a **www.google.com**:
 ![Screenshot](https://i.ibb.co/dttvMCT/pingaso-y-tracert.png)
+
+Por último, accederemos al SSID **Wifi** creado desde un dispositivo móvil y haremos un **tracert** a **google** (8.8.8.8):
+Información de la red:
+![Screenshot](https://i.ibb.co/ZmrSXNf/IMG-20190604-WA0021-resized.jpg)
+
+Y el tracert:
+![Screenshot](https://i.ibb.co/S5Nx199/IMG-20190604-WA0020-resized.jpg)
+
+## Vídeo
+### Por último, mostrar el [vídeo](https://www.youtube.com/watch?v=CtbPDUnQNMk&feature=youtu.be) realizado a modo de tutorial.
