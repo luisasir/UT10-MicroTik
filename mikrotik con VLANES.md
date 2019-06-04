@@ -22,7 +22,7 @@
 
 ### Objetivos
 
-En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con diferentes IP´s mediante la conexión del **hEX** con el **hAP**, este último actúa como switch aunque de Wifi aunque en el programa **Packet tracer** no nos permita diferenciarlo.
+En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con diferentes IP´s mediante la conexión del **hEX** con el **hAP**, este último actúa como switch aunque dé Wifi.
 
 ### Dispositivos
 
@@ -115,6 +115,7 @@ Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
 
 **Respecto a los puertos, en el hEX, el puerto 3 estará conectado al hAP, el puerto 4 y 5, a los diferentes equipos*
 **En los puertos del hAP, el puerto 1 estará conectado con el hEX mientras que el 3 y 5, estarán directamente conectados con ambos equipos.**
+**En el programa **Packet tracer no nos permite diferenciar que el hAP dé Wifi**
 
 ### Verificación
 Finalmente, nos conectaremos desde el ordenador que tiene IP **192.168.20.100** y realizaremos el comando **tracert** a **www.google.com**:
