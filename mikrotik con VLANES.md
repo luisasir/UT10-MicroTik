@@ -36,8 +36,9 @@ Vamos a utilizar dos **artilugios:**
 ### Configuración hEX
 En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el hAP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
-Entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
-Antes que nada, en el hEX, entraremos a las diferentes interfaces que tiene el dispositivo. En la pestaña **"Interface"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s mediante **"pool"** ¿de 1.0 y 2.0 en la interfaz 3 cuya conexión es el hAP.? [IMAGENES VLAN].
+Primero, entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
+Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s de 10.0 y 20.0 en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
+
 Una vez creadas, nos iremos a la configuración de esas propias VLANES, le pondremos la siguiente:
 [IMAGENES CONFIGURACIÓN VLAN 10 Y VLAN 20]
 
