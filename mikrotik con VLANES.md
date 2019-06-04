@@ -93,7 +93,7 @@ En la pestaña **Networks**:
 Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
 ![Screenshot](https://i.ibb.co/GJyqgDD/06-dhcp-pool-hap.png)
 
-###Aclaraciones
+### Aclaraciones
 **El puerto que enlaza el hEX y el hAP, tendrán que estar los dos en modo "trunk"**
 **La NAT se hace de forma autmática en los dispisitivos "Miktrotik"**
 
