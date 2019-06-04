@@ -133,5 +133,13 @@ Y el **tracert**:
 
 ![Screenshot](https://i.ibb.co/S5Nx199/IMG-20190604-WA0020-resized.jpg)
 
+IP del equipo conectado al hEX(tuvimos que cambiar la IP porque hacía conflicto con los demás grupos de clase):
+
+![Screenshot](https://i.ibb.co/9rJFRw6/ip-equipo-1.png)
+
+Finalmente, el tracert hecho desde el equipo conectado al hap hasta el equipo conectado al hEX:
+
+![Screenshot](https://i.ibb.co/VHKpdsG/tracert-desde-equipo-2.jpg)
+
 ## Vídeo
 ### Por último, mostrar el [vídeo](https://www.youtube.com/watch?v=CtbPDUnQNMk&feature=youtu.be) realizado a modo de tutorial.
