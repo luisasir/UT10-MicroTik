@@ -104,10 +104,11 @@ Finalmente, nos conectaremos desde el ordenador que tiene IP **192.168.20.100** 
 Por último, accederemos al SSID **Wifi** creado desde un dispositivo móvil y haremos un **tracert** a **google** (8.8.8.8):
 
 Información de la red:
+
 ![Screenshot](https://i.ibb.co/ZmrSXNf/IMG-20190604-WA0021-resized.jpg)
 
-
 Y el tracert:
+
 ![Screenshot](https://i.ibb.co/S5Nx199/IMG-20190604-WA0020-resized.jpg)
 
 ## Vídeo
