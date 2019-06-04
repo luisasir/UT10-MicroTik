@@ -22,7 +22,7 @@
 
 ### Objetivos
 
-En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con  IP´s diferentes mediante la conexión del **hEX** con el **hAP**, este último actúa como switch aunque de Wifi aunque en el programa **Packet tracer** no nos permita diferenciarlo.
+En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con   IP´s diferentes mediante la conexión del **hEX** con el **hAP**, este último actúa como switch aunque de Wifi aunque en el programa **Packet tracer** no nos permita diferenciarlo.
 
 ### Dispositivos
 
