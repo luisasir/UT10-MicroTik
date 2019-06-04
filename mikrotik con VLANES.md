@@ -65,6 +65,7 @@ También deberemos de configurar las distinas **pools** para indicar en qué **I
 En la configuración del hAP, conectaremos, en el puerto de internet, con el hEX.
 Entraremos con el **Winbox** mediante la MAC, respecto a **hEX**, ya que se reconocen entre sí por estar conectadas.
 En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, al igual que el hEX, configuraremos las dos VLANES a crear en el ethernet 2 junto con un **"WLAN 1"** para el **Wifi**.
+
 ![Screenshot](https://i.ibb.co/k604J7B/02-interface-hap.png)
 
 Una vez configurado lo anterior, nos iremos al **Bridge**.
