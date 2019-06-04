@@ -38,21 +38,30 @@ En el primer puerto  lo conectaremos directamente a Internet a través de la ros
 
 Primero, entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
 Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. 
-En la pestaña **"Interfaces"** deberemos configurar las dos VLANES, que vamos a crear en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
+En la pestaña **"Interfaces"** deberemos configurar las dos VLANES, que vamos a crear en el ethernet 2. 
+![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
 
-Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado. ![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
+Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado. 
+![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
 
-A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente. ![Screenshot](https://i.ibb.co/yFtV4vw/14-bridge-2-hex.png)
+A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente.
+![Screenshot](https://i.ibb.co/yFtV4vw/14-bridge-2-hex.png)
 
 Una vez terminado lo anterior, iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
-Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazandolas con las distintas VLANES que hemos creado para crear la conexión. ![Screenshot](https://i.ibb.co/dWMPzFf/12-address-hex.png)
+Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazandolas con las distintas VLANES que hemos creado para crear la conexión.
+
+![Screenshot](https://i.ibb.co/dWMPzFf/12-address-hex.png)
 
 Una vez finalizado el punto anterior, nos dirigiremos a poner las rutas en la opción **"Route List""**:
+
 ![Screenshot](https://i.ibb.co/z4cwcMD/19-ip-routing-hex.png)
 
 Respecto al DHCP, crearemos un servidor en el hEX para dar conexión IP a los equipos separados por las VLANES con las **"pools"** correspondientes, su configuración será: 
 En la pestaña **DHCP**:
+
 ![Screenshot](https://i.ibb.co/gj0NSSj/17-dhcp-server-hex.png)
+
+En la pestaña **Networks**:
 
 ![Screenshot](https://i.ibb.co/tYBnR0h/18-dhcp-config-hex.png)
 
