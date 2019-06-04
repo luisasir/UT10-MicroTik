@@ -37,13 +37,11 @@ Vamos a utilizar dos **artilugios:**
 En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el hAP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
 Primero, entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
-Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s de 10.0 y 20.0 en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
+Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s de 10.0 y 20.0 y configuraremos las dos VLANES a crear en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
 
-Una vez creadas, nos iremos a la configuración de esas propias VLANES, le pondremos la siguiente:
-[IMAGENES CONFIGURACIÓN VLAN 10 Y VLAN 20]
+Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado. ![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
 
-Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado [IMAGEN PESTAÑA DEL BRIDGE, BRIDGE]
-A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente.[IMAGEN PESTAÑA DEL PORT, BRIDGE]
+A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente. ![Screenshot](https://i.ibb.co/yFtV4vw/14-bridge-2-hex.png)
 
 Una vez terminado lo anterior, iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
 En el hEX(ya que en el hAP va a ser diferente), pondremos las IP´s [IMAGEN IP´s DE hEX]
