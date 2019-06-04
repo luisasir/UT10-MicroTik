@@ -38,19 +38,20 @@ En el primer puerto  lo conectaremos directamente a Internet a través de la ros
 
 Primero, entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
 Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. 
-En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s de 10.0 y 20.0 y configuraremos las dos VLANES a crear en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
+En la pestaña **"Interfaces"** deberemos configurar las dos VLANES, que vamos a crear en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
 
 Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado. ![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
 
 A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente. ![Screenshot](https://i.ibb.co/yFtV4vw/14-bridge-2-hex.png)
 
 Una vez terminado lo anterior, iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
-Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazandolas con las distintas VLANES que hemos creado. ![Screenshot](https://i.ibb.co/dWMPzFf/12-address-hex.png)
+Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazandolas con las distintas VLANES que hemos creado para crear la conexión. ![Screenshot](https://i.ibb.co/dWMPzFf/12-address-hex.png)
 
 Una vez finalizado el punto anterior, nos dirigiremos a poner las rutas en la opción **"Route List""**:
 ![Screenshot](https://i.ibb.co/z4cwcMD/19-ip-routing-hex.png)
 
 Respecto al DHCP, crearemos un servidor en el hEX para dar conexión IP a los equipos separados por las VLANES con las **"pools"** correspondientes, su configuración será: 
+En la pestaña **DHCP**:
 ![Screenshot](https://i.ibb.co/gj0NSSj/17-dhcp-server-hex.png)
 
 ![Screenshot](https://i.ibb.co/tYBnR0h/18-dhcp-config-hex.png)
@@ -63,10 +64,39 @@ También deberemos de configurar las distinas **pools** para indicar en qué **I
 ### Configuración hAP
 En la configuración del hAP, conectaremos, en el puerto de internet, con el hEX.
 Entraremos con el **Winbox** mediante la MAC, respecto a **hEX**, ya que se reconocen entre sí por estar conectadas.
-En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, al igual que el hEX, pondremos las IP´s de 10.0 y 20.0 y configuraremos las dos VLANES a crear en el ethernet 2.
+En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, al igual que el hEX, configuraremos las dos VLANES a crear en el ethernet 2 junto con un **"WLAN 1"** para el **Wifi**.
+![Screenshot](https://i.ibb.co/k604J7B/02-interface-hap.png)
 
-En la parte del servidor DHCP, la diferencia que ha de tener el hAP respecto al hEX, es que no se monta el servidor DHCP.
+Una vez configurado lo anterior, nos iremos al **Bridge**.
 
-**Nombrar también que el puerto que enlaza el hEX y el hAP, tendrán que estar los dos en modo "trunk"**
+Al igual que en el hEX, creamos dos para las VLANES creadas.
+![Screenshot](https://i.ibb.co/wStfgLG/03-bridge-hap.png)
+
+A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente junto con el WLAN.
+![Screenshot](https://i.ibb.co/JtXZ0kW/04-bridge-2-hap.png)
+
+Ahora iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
+Pondremos las IP´s **192.168.10.2** y **192.168.20.2** enlazandolas con las distintas VLANES que hemos creado para que los dos equipos cojan esa misma IP.
+![Screenshot](https://i.ibb.co/CtXTzNR/01-address-hap.png)
+
+En el siguiente paso configuraremos las diferentes rutas:
+![Screenshot](https://i.ibb.co/C8DNc5R/09-ip-routing-hap.png)
+
+A continuación configuraremos el servidor DHCP que tendrá el dispositivo hAP.
+En esta ocasión lo haremos por y para la conexión **Wifi**, crearemos otra nueva dirección (**192.168.30.0**).
+En la pestaña **DHCP**:
+![Screenshot](https://i.ibb.co/3psKX4D/07-dhcp-server.png)
+
+En la pestaña **Networks**:
+![Screenshot](https://i.ibb.co/FmjLLQ2/08-dhcp-config-hap.png)
+
+Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
+![Screenshot](https://i.ibb.co/GJyqgDD/06-dhcp-pool-hap.png)
+
+###Aclaraciones
+**El puerto que enlaza el hEX y el hAP, tendrán que estar los dos en modo "trunk"**
+**La NAT se hace de forma autmática en los dispisitivos "Miktrotik"**
 
 ### Verificación
+Finalmente, nos conectaremos desde el ordenador que tiene IP **192.168.20.100** y realizaremos el comando **tracert** a **www.google.com**:
+![Screenshot](https://i.ibb.co/dttvMCT/pingaso-y-tracert.png)
