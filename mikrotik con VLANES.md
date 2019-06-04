@@ -14,12 +14,15 @@
 
 <li type="disc">Configuración hAP</li>
 
+<li type="disc">Aclaraciones</li>
+
 <li type="disc">Verificación</li>
 
 </ul>
+
 ### Objetivos
 
-En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con IP´s diferentes mediante la conexión del hEX con el hAP, este último actúa como switch aunque de WIFI aunque en el programa **Packet tracer** no nos permita diferenciarlo.
+En este trabajo trataremos de crear VLANES para crear conexión a internet con cuatro equipos, 2 en la misma VLAN con IP´s diferentes mediante la conexión del **hEX** con el **hAP**, este último actúa como switch aunque de Wifi aunque en el programa **Packet tracer** no nos permita diferenciarlo.
 
 ### Dispositivos
 
@@ -34,14 +37,14 @@ Vamos a utilizar dos **artilugios:**
 **Winbox** es una pequeña aplicación que nos permite la administración de Mikrotik RouterOS usando una interfaz gráfica.
 
 ### Configuración hEX
-En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el hAP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
+En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el **hAP** en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
-Primero, entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
-Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. 
+Primero, entraremos al **hEX** mediante la **MAC**(si no tiene IP puesta) con el Winbox.
+Antes que nada, en el **hEX**, accederemos a las diferentes interfaces que tiene el dispositivo. 
 En la pestaña **"Interfaces"** deberemos configurar las dos VLANES, que vamos a crear en el ethernet 2. 
 ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
 
-Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado. 
+Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña **"Bridge"** y crearemos 2 para las VLANES que hemos creado. 
 ![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
 
 A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente.
@@ -56,7 +59,7 @@ Una vez finalizado el punto anterior, nos dirigiremos a poner las rutas en la op
 
 ![Screenshot](https://i.ibb.co/z4cwcMD/19-ip-routing-hex.png)
 
-Respecto al DHCP, crearemos un servidor en el hEX para dar conexión IP a los equipos separados por las VLANES con las **"pools"** correspondientes, su configuración será: 
+Respecto al DHCP, crearemos un servidor en el **hEX** para dar conexión IP a los equipos separados por las VLANES con las **"pools"** correspondientes, su configuración será: 
 En la pestaña **DHCP**:
 
 ![Screenshot](https://i.ibb.co/gj0NSSj/17-dhcp-server-hex.png)
@@ -71,15 +74,15 @@ También deberemos de configurar las distinas **pools** para indicar en qué **I
 
 
 ### Configuración hAP
-En la configuración del hAP, conectaremos, en el puerto de internet, con el hEX.
+En la configuración del **hAP**, conectaremos, en el puerto de internet, con el **hEX**.
 Entraremos con el **Winbox** mediante la MAC, respecto a **hEX**, ya que se reconocen entre sí por estar conectadas.
-En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, al igual que el hEX, configuraremos las dos VLANES a crear en el ethernet 2 junto con un **"WLAN 1"** para el **Wifi**.
+En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, al igual que el **hEX**, configuraremos las dos VLANES a crear en el ethernet 2 junto con un **"WLAN 1"** para el **Wifi**.
 
 ![Screenshot](https://i.ibb.co/k604J7B/02-interface-hap.png)
 
 Una vez configurado lo anterior, nos iremos al **Bridge**.
 
-Al igual que en el hEX, creamos dos para las VLANES creadas.
+Al igual que en el **hEX**, creamos dos para las VLANES creadas.
 ![Screenshot](https://i.ibb.co/wStfgLG/03-bridge-hap.png)
 
 A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente junto con el WLAN.
@@ -94,7 +97,7 @@ Pondremos las IP´s **192.168.10.2** y **192.168.20.2** enlazandolas con las dis
 En el siguiente paso configuraremos las diferentes rutas:
 ![Screenshot](https://i.ibb.co/C8DNc5R/09-ip-routing-hap.png)
 
-A continuación configuraremos el servidor DHCP que tendrá el dispositivo hAP.
+A continuación configuraremos el servidor DHCP que tendrá el dispositivo **hAP**.
 En esta ocasión lo haremos por y para la conexión **Wifi**, crearemos otra nueva dirección (**192.168.30.0**).
 En la pestaña **DHCP**:
 ![Screenshot](https://i.ibb.co/3psKX4D/07-dhcp-server.png)
@@ -110,17 +113,20 @@ Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
 
 **La NAT se hace de forma autmática en los dispisitivos "Miktrotik"**
 
+**Respecto a los puertos, en el hEX, el puerto 3 estará conectado al hAP, el puerto 4 y 5, a los diferentes equipos*
+**En los puertos del hAP, el puerto 1 estará conectado con el hEX mientras que el 3 y 5, estarán directamente conectados con ambos equipos.**
+
 ### Verificación
 Finalmente, nos conectaremos desde el ordenador que tiene IP **192.168.20.100** y realizaremos el comando **tracert** a **www.google.com**:
 ![Screenshot](https://i.ibb.co/dttvMCT/pingaso-y-tracert.png)
 
-Por último, accederemos al SSID **Wifi** creado desde un dispositivo móvil y haremos un **tracert** a **google** (8.8.8.8):
+Por último, accederemos al **SSID Wifi** creado desde un **dispositivo móvil** y haremos un **tracert** a **google** (8.8.8.8):
 
-Información de la red:
+Información de la **red**:
 
 ![Screenshot](https://i.ibb.co/ZmrSXNf/IMG-20190604-WA0021-resized.jpg)
 
-Y el tracert:
+Y el **tracert**:
 
 ![Screenshot](https://i.ibb.co/S5Nx199/IMG-20190604-WA0020-resized.jpg)
 
