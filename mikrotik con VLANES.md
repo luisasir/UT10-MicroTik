@@ -73,6 +73,7 @@ Al igual que en el hEX, creamos dos para las VLANES creadas.
 ![Screenshot](https://i.ibb.co/wStfgLG/03-bridge-hap.png)
 
 A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente junto con el WLAN.
+
 ![Screenshot](https://i.ibb.co/JtXZ0kW/04-bridge-2-hap.png)
 
 Ahora iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
