@@ -44,14 +44,14 @@ Antes que nada, en el **hEX**, accederemos a las diferentes interfaces que tiene
 En la pestaña **"Interfaces"** deberemos configurar las dos VLANES, que vamos a crear en el ethernet 2. 
 ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
 
-Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña **"Bridge"** y crearemos 2 para las VLANES que hemos creado. 
+Ahora nos iiremos a la pestaña **"Bridge"** y crearemos 2 para las VLANES que hemos establecido. 
 ![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
 
 A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente.
 ![Screenshot](https://i.ibb.co/yFtV4vw/14-bridge-2-hex.png)
 
 Una vez terminado lo anterior, iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
-Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazandolas con las distintas VLANES que hemos creado para crear la conexión.
+Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazándolas con las distintas VLANES que hemos creado para crear la conexión.
 
 ![Screenshot](https://i.ibb.co/dWMPzFf/12-address-hex.png)
 
@@ -105,7 +105,7 @@ En la pestaña **DHCP**:
 En la pestaña **Networks**:
 ![Screenshot](https://i.ibb.co/FmjLLQ2/08-dhcp-config-hap.png)
 
-Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
+Para crear el **pool**(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
 ![Screenshot](https://i.ibb.co/GJyqgDD/06-dhcp-pool-hap.png)
 
 ### Aclaraciones
@@ -114,7 +114,9 @@ Para crear el pool(lo crearemos de la **192.168.30.5** a la **192.168.30.100**):
 **La NAT se hace de forma autmática en los dispisitivos "Miktrotik"**
 
 **Respecto a los puertos, en el hEX, el puerto 3 estará conectado al hAP, el puerto 4 y 5, a los diferentes equipos*
+
 **En los puertos del hAP, el puerto 1 estará conectado con el hEX mientras que el 3 y 5, estarán directamente conectados con ambos equipos.**
+
 **En el programa **Packet tracer no nos permite diferenciar que el hAP dé Wifi**
 
 ### Verificación
