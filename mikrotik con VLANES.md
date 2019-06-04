@@ -88,6 +88,7 @@ A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la sal
 
 Ahora iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
 Pondremos las IP´s **192.168.10.2** y **192.168.20.2** enlazandolas con las distintas VLANES que hemos creado para que los dos equipos cojan esa misma IP.
+
 ![Screenshot](https://i.ibb.co/CtXTzNR/01-address-hap.png)
 
 En el siguiente paso configuraremos las diferentes rutas:
