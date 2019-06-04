@@ -44,9 +44,20 @@ Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos
 A continuación nos dirigiremos a la pestaña **"Ports"** para configurar la salida de las VLANES creadas anteriormente. ![Screenshot](https://i.ibb.co/yFtV4vw/14-bridge-2-hex.png)
 
 Una vez terminado lo anterior, iremos a **"Addresses list"** en la opción **"Addresses"** para configurar las direcciones IP.
-En el hEX(ya que en el hAP va a ser diferente), pondremos las IP´s [IMAGEN IP´s DE hEX]
+Pondremos las IP´s **192.168.10.1** y **192.168.20.1** enlazandolas con las distintas VLANES que hemos creado. ![Screenshot](https://i.ibb.co/dWMPzFf/12-address-hex.png)
 
-Respecto al DHCP, crearemos un servidor en el hEX(es diferente en el hAP) para dar conexión IP a los equipos separados por las VLANES con las **"pools"** correspondientes [IMÁGENES SERVIDOR DHCP DEL hEX]   
+Una vez finalizado el punto anterior, nos dirigiremos a poner las rutas en la opción **"Route List""**:
+![Screenshot](https://i.ibb.co/z4cwcMD/19-ip-routing-hex.png)
+
+Respecto al DHCP, crearemos un servidor en el hEX para dar conexión IP a los equipos separados por las VLANES con las **"pools"** correspondientes, su configuración será: 
+![Screenshot](https://i.ibb.co/gj0NSSj/17-dhcp-server-hex.png)
+
+![Screenshot](https://i.ibb.co/tYBnR0h/18-dhcp-config-hex.png)
+
+También deberemos de configurar las distinas **pools** para indicar en qué **IP** a que **IP** pueden estar, así que pondremos, en **pool 10,* de la **10.5 hasta la 10.100** y en **pool 20** de la **20.5 hasta la 20.100**:
+
+![Screenshot](https://i.ibb.co/ww7SPhb/16-DHCP-pool-hex.png)
+
 
 ### Configuración hAP
 En la configuración del hAP en comparación con la del hEX, lo único que cambia es la pestaña de **"adresses"** y el **"servidor DHCP"**.
