@@ -37,7 +37,8 @@ Vamos a utilizar dos **artilugios:**
 En el primer puerto  lo conectaremos directamente a Internet a través de la roseta de la clase. Después lo enlazaremos con el hAP en el puerto 3. Finalmente, en el puerto 5, lo conectaremos con el equipo para que lo pueda detectar y así poder configurarlo.
 
 Primero, entraremos al **hEX** mediante la MAC(si no tiene IP puesta) con el Winbox.
-Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s de 10.0 y 20.0 y configuraremos las dos VLANES a crear en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
+Antes que nada, en el hEX, accederemos a las diferentes interfaces que tiene el dispositivo. 
+En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, en esta ocasión pondremos las IP´s de 10.0 y 20.0 y configuraremos las dos VLANES a crear en el ethernet 2. ![Screenshot](https://i.ibb.co/865w5kV/11-interfaces-hex.png)
 
 Una vez realizadas las VLANES, nos dirigiremos a configurar el **"Bridge"**. Nos dirigiremos a la pestaña del **"Bridge"** y crearemos 2 para las VLANES que hemos creado. ![Screenshot](https://i.ibb.co/BKS0YwG/13-bridge-hex.png)
 
@@ -60,8 +61,9 @@ También deberemos de configurar las distinas **pools** para indicar en qué **I
 
 
 ### Configuración hAP
-En la configuración del hAP en comparación con la del hEX, lo único que cambia es la pestaña de **"adresses"** y el **"servidor DHCP"**.
-En la pestaña de las direcciones, cambiaremos la IP respecto al hEX ya que aquí daremos la IP que tendrán los distintos PC´s en la interfaz de la VLAN correspondiente.
+En la configuración del hAP, conectaremos, en el puerto de internet, con el hEX.
+Entraremos con el **Winbox** mediante la MAC, respecto a **hEX**, ya que se reconocen entre sí por estar conectadas.
+En la pestaña **"Interfaces"** deberemos configurar distintas VLANES, al igual que el hEX, pondremos las IP´s de 10.0 y 20.0 y configuraremos las dos VLANES a crear en el ethernet 2.
 
 En la parte del servidor DHCP, la diferencia que ha de tener el hAP respecto al hEX, es que no se monta el servidor DHCP.
 
