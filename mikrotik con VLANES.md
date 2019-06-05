@@ -142,4 +142,4 @@ Finalmente, el tracert hecho desde el equipo conectado al hap hasta el equipo co
 ![Screenshot](https://i.ibb.co/VHKpdsG/tracert-desde-equipo-2.jpg)
 
 ## Vídeo
-### Por último, mostrar el [vídeo](https://www.youtube.com/watch?v=CtbPDUnQNMk&feature=youtu.be) realizado a modo de tutorial.
+### Por último, mostrar el [vídeo](https://www.youtube.com/watch?v=3BmkVN4K0Ag&feature=youtu.be) realizado a modo de tutorial.
